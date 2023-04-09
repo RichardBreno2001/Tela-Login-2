@@ -1,31 +1,76 @@
 body {
-    background-image: linear-gradient(to left,rgb(58, 58, 58),rgb(0, 0, 0));
+    background-image: linear-gradient(to left, black,rgb(34, 34, 34));
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     height: 98vh;
+
 }
 
 
 .container {
-    box-shadow: 5px 10px 10px #A216A8;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    background-color: white;
+    box-shadow: 3px 5px 5px #000000;
+    margin-top: 100px;
+    background-color: rgb(97, 97, 97);
+    padding: 50px;
+    border-radius: 20px;
 }
 
 h2 {
     font-weight: bolder;
-    padding-bottom: 25px;
-    padding-top: 50px;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 1px 2px 2px black;
 }
 
 #btn {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     width: 100%;
+    background-color: #DF50F2;
+    border: none;
+}
+#btn:hover {
+    background-color: #d350e4;
+}
+form {
+    padding-bottom: 40px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:992px) {
     #btn {
-        width: auto;
+        width: 100%;
+        font-size: 1.7em;
     }
+    form {
+        padding-bottom: 80px;
+    }
+    
+}
+
+
+
+#email , #senha {
+    border: none;
+    border-bottom: solid 3px #FF00FF;
+    border-radius: 0px;
+    background-color: rgba(240, 248, 255, 0);
+}
+#email:focus {
+    box-shadow: none;
+}
+#senha:focus {
+    box-shadow: none;
+}
+
+
+#link {
+    font-size: 1.5em;
+    color: #eb93b1;
+}
+#link:hover {
+    color: #e4638e;
+}
+
+.form-floating > .form-control:focus~label {
+    color: #FF00FF;
 }
