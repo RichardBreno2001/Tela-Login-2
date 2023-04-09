@@ -1,0 +1,31 @@
+body {
+    background-image: linear-gradient(to left,rgb(58, 58, 58),rgb(0, 0, 0));
+    height: 98vh;
+}
+
+
+.container {
+    box-shadow: 5px 10px 10px #A216A8;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+
+h2 {
+    font-weight: bolder;
+    padding-bottom: 25px;
+    padding-top: 50px;
+}
+
+#btn {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    #btn {
+        width: auto;
+    }
+}
